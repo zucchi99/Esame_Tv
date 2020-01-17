@@ -113,4 +113,22 @@ public class Canale {
             }
         } );
     }
+    
+    //per titolo, canale, giorno, ora)
+
+    /**
+     * cerca e restituisce tutte le trasmissioni future che
+     * contengono nel titolo della trasmissione il titolo ricevuto parametro
+     * @param titolo il titolo che si cerca
+     * @return lista delle trasmissioni future con quel titolo
+     * @throws NullPointerException se titolo è nullo o se non è stata ancora inserita nessuna trasmissione
+     */
+    public List<Trasmissione> cercaPerTitolo(String titolo)
+            throws NullPointerException {
+        Objects.requireNonNull(titolo);
+        Objects.requireNonNull(trasmissioni);
+        return trasmissioni.stream().filter(
+                t -> t.getTitolo().contains(titolo) && t.TrasmissioneEFutura()).collect(Collectors.toList());
+    }
+    
 }
