@@ -54,7 +54,7 @@ public class TV {
      */
     private void setDoppioSchermo(boolean doppioSchermo, Integer canaleSecondario) throws NullPointerException {
         if(doppioSchermo) {
-            canaleSecondario = Objects.requireNonNull(canaleSecondario);
+            Objects.requireNonNull(canaleSecondario);
             canaleSelezSecond = canaleSecondario;
         } else {
             canaleSelezSecond = null;
@@ -70,14 +70,14 @@ public class TV {
         return canaleSelezSecond;
     }
 
-    //to do not null
+    //todo not null
     public void show(Integer programma) {
         setDoppioSchermo(false, null);
         canaleSelezPrinc = programma;
         //TO DO
     }
 
-    //to do not null
+    //todo not null
     public void show(Integer programmaPrincipale, Integer programmaSecondario) {
         setDoppioSchermo(true, programmaSecondario);
         canaleSelezPrinc = programmaPrincipale;
