@@ -12,7 +12,7 @@ In una API per manipolare queste informazioni ci devono essere i metodi per le s
 
 - [x] Poter cambiare o aggiungere le trasmissioni di un canale (solo quelle future) 
 
-- [x] Poter cercare una trasmissione (per titolo, canale, giorno, ora) tra quelle future, e poterla settare per la registrazione in automatico, o poter verificare se è già “prenotata” per la registrazione, o poter annullare la richiesta di registrazione.
+- [ ] Poter cercare una trasmissione (per titolo, canale, giorno, ora) tra quelle future, e poterla settare per la registrazione in automatico, o poter verificare se è già “prenotata” per la registrazione, o poter annullare la richiesta di registrazione.
 
 # Cosa fare
 
